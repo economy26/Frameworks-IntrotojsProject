@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showit-Inspired Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ShowYou</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="text-center bg-light py-5">
+  <div class="container">
+    <h1 class="display-4">Create a Stunning Website</h1>
+    <p class="lead">Design freely and express your brand with impact.</p>
+    <a href="#contact" class="btn btn-primary btn-lg mt-3">Get Started</a>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+  <h2 class="text-center mb-4">Why Choose Us</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <i class="bi bi-pencil-square fs-1"></i>
+      <h4>Drag & Drop Editor</h4>
+      <p>Effortlessly build your site with no code needed.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-phone fs-1"></i>
+      <h4>Responsive Layout</h4>
+      <p>Your site will look perfect on all devices.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-people fs-1"></i>
+      <h4>Strong Community</h4>
+      <p>Support from thousands of creatives like you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Form Section -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Preferred Date</label>
+      <input type="date" class="form-control" id="date">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</section>
+
+<!-- Table Section -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Plans & Pricing</h2>
+  <table class="table table-bordered text-center">
+    <thead class="table-light">
+      <tr><th>Plan</th><th>Features</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Basic</td><td>Single Page</td><td>$9/mo</td></tr>
+      <tr><td>Pro</td><td>Multi-Page, Blog</td><td>$19/mo</td></tr>
+      <tr><td>Business</td><td>Ecommerce & SEO</td><td>$29/mo</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Carousel Component -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Gallery</h2>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Modal Trigger -->
+<section class="text-center py-5">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">Learn More</button>
+</section>
+
+<!-- Modal Component -->
+<div class="modal fade" id="infoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">More Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Explore more features and tips on how to get started.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Accordion Component -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">FAQs</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Can I use this site without coding?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Yes! Everything is designed with drag and drop features.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Is it mobile-friendly?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Absolutely. Your design adapts perfectly to phones and tablets.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2025 ShowYou. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

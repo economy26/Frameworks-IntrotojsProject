@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar adjustments */
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Hero section */
+  header {
+    background: linear-gradient(to right, #d4fc79, #96e6a1);
+    color: #1a1a1a;
+    padding: 80px 0;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  header .btn {
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+  
+  /* Features / About section */
+  #about h4 {
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  #about i {
+    color: #198754;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact form */
+  form input,
+  form button {
+    border-radius: 8px;
+  }
+  
+  form button {
+    padding: 10px 25px;
+    font-weight: 600;
+  }
+  
+  /* Table */
+  table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .table thead {
+    background-color: #e9ecef;
+  }
+  
+  /* Carousel */
+  .carousel-item img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal */
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  .modal-header {
+    background-color: #198754;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-body {
+    font-size: 1rem;
+  }
+  
+  /* Accordion */
+  .accordion-button {
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
